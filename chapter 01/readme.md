@@ -45,3 +45,17 @@ use-credentials: A cross-origin request will be sent with credentials, cookies, 
  
 
 Example: Below code demonstrates the use of crossorigin attribute in a <script> element.
+
+# diference between React and ReactDOM
+
+React library is responsible for creating views and ReactDOM library is responsible to actually render UI in the browser
+
+To build more environments that React can render to, React team planned to split the main React package into two: react and react-dom . This paves the way to writing components that can be shared between the web version of React and React Native.
+
+React contains functionality utilised in web and mobile apps. ReactDOM functionality is utilised only in web apps.
+
+# What is difference between react.development.js and react.production.js files via CDN?
+
+# What is async and defer?
+
+async and defer both load JavaScript asynchronously without render blocking, but async executes as soon as possible while defer runs in sequence toward the end of the loading process, just before the DOMContentLoaded event.
