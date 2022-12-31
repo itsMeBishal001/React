@@ -63,3 +63,47 @@ async and defer both load JavaScript asynchronously without render blocking, but
 If async is present: The script is downloaded in parallel to parsing the page, and executed as soon as it is available (before parsing completes) If defer is present (and not async ): The script is downloaded in parallel to parsing the page, and executed after the page has finished parsing.
 
 The browser has to download and process the content of the script tag before rendering the rest of the web page. async and defer attributes help to reduce delays when executing code in the script tag. These elements are essential in improving web page performance. They facilitate an enhanced user experience
+
+# arrow function
+
+An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage:
+
+Arrow functions don't have their own bindings to this, arguments, or super, and should not be used as methods.
+Arrow functions cannot be used as constructors. Calling them with new throws a TypeError. They also don't have access to the new.target keyword.
+Arrow functions cannot use yield within their body and cannot be created as generator functions.
+
+param => expression
+
+(param) => expression
+
+(param1, paramN) => expression
+
+param => {
+  statements
+}
+
+(param1, paramN) => {
+  statements
+}
+//////////////////
+
+(a, b, ...r) => expression
+(a = 400, b = 20, c) => expression
+([a, b] = [10, 20]) => expression
+({ a, b } = { a: 10, b: 20 }) => expression
+////////
+// Traditional anonymous function
+(function (a) {
+  return a + 100;
+});
+
+// 1. Remove the word "function" and place arrow between the argument and opening body bracket
+(a) => {
+  return a + 100;
+};
+
+// 2. Remove the body braces and word "return" — the return is implied.
+(a) => a + 100;
+
+// 3. Remove the parameter parentheses
+a => a + 100;
