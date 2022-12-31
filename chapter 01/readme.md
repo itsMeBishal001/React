@@ -56,6 +56,8 @@ React contains functionality utilised in web and mobile apps. ReactDOM functiona
 
 # What is difference between react.development.js and react.production.js files via CDN?
 
+The difference is the size and the performance of the both files. development.js file is larger in size and not minified on contrary  production.js file is a minified one and quite smaller in size when compared to development.js file so the production one compiles fast and performance would be great in it
+
 # What is async and defer?
 
 async and defer both load JavaScript asynchronously without render blocking, but async executes as soon as possible while defer runs in sequence toward the end of the loading process, just before the DOMContentLoaded event.
