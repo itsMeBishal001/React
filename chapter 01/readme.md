@@ -59,3 +59,7 @@ React contains functionality utilised in web and mobile apps. ReactDOM functiona
 # What is async and defer?
 
 async and defer both load JavaScript asynchronously without render blocking, but async executes as soon as possible while defer runs in sequence toward the end of the loading process, just before the DOMContentLoaded event.
+
+If async is present: The script is downloaded in parallel to parsing the page, and executed as soon as it is available (before parsing completes) If defer is present (and not async ): The script is downloaded in parallel to parsing the page, and executed after the page has finished parsing.
+
+The browser has to download and process the content of the script tag before rendering the rest of the web page. async and defer attributes help to reduce delays when executing code in the script tag. These elements are essential in improving web page performance. They facilitate an enhanced user experience
