@@ -31,3 +31,17 @@ React is called React because it was designed to be a declarative, efficient, an
 The name "React" was chosen because the library was designed to allow developers to "react" to changes in state and data within an application, and to update the user interface in a declarative and efficient manner.
 
 React was developed by Facebook and released in 2013, and it has since become one of the most popular JavaScript libraries for building web and mobile applications. It is used by many companies and organizations around the world, and it has a large and active developer community.
+
+# What is crossorigin in script tag?
+
+The purpose of crossorigin attribute is used to share the resources from one domain to another domain. Basically, it is used to handle the CORS request. It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from other domains. The resources may include Audio, Video, Images, Link or external script that specifies whether to support a cross-origin request or not.
+
+CORS: It stands for cross-origin resource sharing. It is a mechanism by which one webpage requests to another domain for fetching out the resource like audio, video, script, etc. from the third party server without leaking their credentials information. 
+
+Values: This attribute contains two values which are given below –
+
+anonymous: It has a default value. It defines a CORS request which will be sent without passing the credential information.
+use-credentials: A cross-origin request will be sent with credentials, cookies, and certificate.
+ 
+
+Example: Below code demonstrates the use of crossorigin attribute in a <script> element.
